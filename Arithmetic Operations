@@ -1,0 +1,41 @@
+#include<iostream>
+#include<conio>
+using namespace std;
+class aret
+{
+  void show()
+  {
+    int a,b,c,ch;
+    cout<<"enter the value of a="<<endl;
+    cin>>a;
+    cout<<"enter the value of b="<<endl;
+    cin>>b;
+    cout<<"1:addition \n2:subtraction \n3:multiplication \n4:division";
+    cin>>ch;
+    switch(ch)
+    {
+      case 1:
+        c=a+b;
+        cout<<"addition="<<c;
+        break;
+      case 2:
+        c=a-b;
+        cout<<"subtraction="<<c;
+        break;
+      case 3:
+        c=a*b;
+        cout<<"multiplication="<<c;
+        break;
+      case 4:
+        c=a/b;
+        cout<<"division="<<c;
+        break;
+    }
+}
+void main()
+{
+  clrscr();
+  aret ob;
+  ob.show();
+  getch();
+}
